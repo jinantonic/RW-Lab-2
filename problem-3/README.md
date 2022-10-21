@@ -6,14 +6,14 @@ API that looks like the following:
 </br></br>
 
 Notes:
-⚫ Use only native APIs, Javascript, HTML and CSS (no external libraries permitted.
-⚫ You may use whatever style of async programming primitives you like such as callbacks, promises or streams.
-⚫ The API endpoint for retrieving user information is https://api.github.com/users.
-⚫ The user of your application can input a username and search in Github for that user’s information. 
-⚫ The information should be displayed as shown, including the avatar picture at the top left.
-⚫ The repo information can be obtained by following the “repos_url”. 
+- Use only native APIs, Javascript, HTML and CSS (no external libraries permitted.
+- You may use whatever style of async programming primitives you like such as callbacks, promises or streams.
+- The API endpoint for retrieving user information is https://api.github.com/users.
+- The user of your application can input a username and search in Github for that user’s information. 
+- The information should be displayed as shown, including the avatar picture at the top left.
+- The repo information can be obtained by following the “repos_url”. 
    You should implement a scrollable list to display these if the number exceeds 5.
-⚫ Marks will be awarded for code quality such as formatting and how DRY your code is.
+- Marks will be awarded for code quality such as formatting and how DRY your code is.
 
 
 # My solution
