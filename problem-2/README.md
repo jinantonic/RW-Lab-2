@@ -1,7 +1,6 @@
 # Problem 2
 
-For this problem refer to the lecture on array operations and consult the
-documentation at:
+For this problem refer to the lecture on array operations and consult the documentation at:
 https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
 
 The API you will work with is here:
