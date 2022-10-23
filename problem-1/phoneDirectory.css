@@ -31,7 +31,8 @@ table {
 }
 
 th {
-    background: #73685d;
+    /* '\
+    ' */
     font-weight: bold;
     color: #fff;
     padding: 1em .5em;

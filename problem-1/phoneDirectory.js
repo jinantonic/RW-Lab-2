@@ -13,16 +13,20 @@ contactArr.push(new Contact("Skittles Park", "0234235344", "jinaasfad"));
 
 var contactList = function() {
     var cont = document.getElementById("contactsTable")
+    
     cont.innerHTML = '<tr><th>Name</th><th>Mobile</th><th>Email</th></tr>'; // Fixed header of the table
+    //cont.innerHTML = '<thead><tr><th>Name</th><th>Mobile</th><th>Email</th></tr></thead>'; // Fixed header of the table
 
     for (let i = 0; i < contactArr.length; i++) {
-        cont.innerHTML += '<tr><td id = "contactName' + i + '">' + contactArr[i].contactName
+        cont.innerHTML += '<tbody><tr><td id = "contactName' + i + '">' + contactArr[i].contactName
                         + '</td><td id = "mobileNumber' + i + '">' + contactArr[i].mobileNumber
-                        + '</td><td id = "email' + i + '">' + contactArr[i].email + '</td></tr>';
-        // if(i % 2 ==0) {
-        //     cont.style.background = '#FCFCFC';
-        // }
+                        + '</td><td id = "email' + i + '">' + contactArr[i].email + '</td></tr></tbody>';
     } // end for 
+
+    // var oddRow = document.querySelectorAll('tr:nth-child(odd)');
+    // for (let i = 0; i < oddRow.length; i++) {
+    //     oddRow[i].style.backgroundColor = 'red';
+    // } // end for
 } // end function
 
 
