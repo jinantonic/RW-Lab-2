@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jina's Phone Directory</title>
+        <h1>Phone Directory</h1>
+        <link rel="stylesheet" href="/problem-1/phoneDirectory.css">
+        <script src="/problem-1/phoneDirectory.js"></script>
+    </head>
+
+    <body>
+        <div class = "blueBox" id = "blueBox"></div> 
+        <div class = "contact_input">
+            <input type = "text" id = "contactName" placeholder = "Contact Name"></label>
+            <input type = "text" id = mobileNumber placeholder = "Mobile Number"></label>
+            <input type = "text" id = "email" placeholder = "Email"></label>
+            <button type = "button" class = "addButton" onclick="addContact()">Add Contact</button><br><br>
+            <button type = "button" class = "addButton" onclick="contactList()">Show Saved Contact</button><br><br>
+        </div>
+
+        <!-- Can delete name or id if none of them are being used -->
+        <label for = "search" class = "search_input">Search contact by Mobile No: </label>
+        <input type = "text" id = "search" name = "search" class = "search_input">
+
+        <h2>Contacts Summary</h2>
+        <table class = "contactsTable" id = "contactsTable">
+            <tbody id="tbody">
+                <tr>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </tbody>
+        <table>
+    </body>
+
+</html>
