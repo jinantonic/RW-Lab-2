@@ -19,11 +19,12 @@ var contactList = function() {
         cont.innerHTML += '<tr><td id = "contactName' + i + '">' + contactArr[i].contactName
                         + '</td><td id = "mobileNumber' + i + '">' + contactArr[i].mobileNumber
                         + '</td><td id = "email' + i + '">' + contactArr[i].email + '</td></tr>';
-        // if(i % 2 == 0) {
-        //     cont.innerHTML = contactList.style.background = 'red';
+        // if(i % 2 ==0) {
+        //     cont.style.background = '#FCFCFC';
         // }
     } // end for 
 } // end function
+
 
 
 var addContact = function() {

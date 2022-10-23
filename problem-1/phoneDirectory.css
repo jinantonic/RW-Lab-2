@@ -44,7 +44,7 @@ td {
     vertical-align: middle;
 }
 
-table > tr:nth-child(odd) {
+tr:nth-child(odd) {
     background-color: red;
 }
 
