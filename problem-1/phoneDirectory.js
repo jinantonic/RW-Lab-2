@@ -8,19 +8,19 @@ var Contact = function (contactName, mobileNumber, email) {
 
 var contactArr = []; // Declaring an array for the summary of the contacts
 contactArr.push(new Contact("Jina Park", "0838103838", "jinapark119@gmail.com"));
-contactArr.push(new Contact("Ovid Horan", "08234", "jinapark119@gmail.com"));
+contactArr.push(new Contact("Ovid Horan", "08234", "jinapark119@gl.com"));
 contactArr.push(new Contact("Skittles Park", "0234235344", "jinaasfad"));
 
 var contactList = function() {
-    var cont = document.getElementById("contactsTable")
+    var cont = document.getElementById("contactsTable");
     
     cont.innerHTML = '<tr><th>Name</th><th>Mobile</th><th>Email</th></tr>'; // Fixed header of the table
     //cont.innerHTML = '<thead><tr><th>Name</th><th>Mobile</th><th>Email</th></tr></thead>'; // Fixed header of the table
 
-    for (let i = 0; i < contactArr.length; i++) {
-        cont.innerHTML += '<tbody><tr><td id = "contactName' + i + '">' + contactArr[i].contactName
-                        + '</td><td id = "mobileNumber' + i + '">' + contactArr[i].mobileNumber
-                        + '</td><td id = "email' + i + '">' + contactArr[i].email + '</td></tr></tbody>';
+    for (var i = 0; i < contactArr.length; i++) {
+        cont.innerHTML += '<tr><td id = "contactName' + i + '">' + contactArr[i].contactName + '</td>'
+                        + '<td id = "mobileNumber' + i + '">' + contactArr[i].mobileNumber + '</td>'
+                        + '<td id = "email' + i + '">' + contactArr[i].email + '</td></tr>';
     } // end for 
 
     // var oddRow = document.querySelectorAll('tr:nth-child(odd)');
@@ -28,7 +28,6 @@ var contactList = function() {
     //     oddRow[i].style.backgroundColor = 'red';
     // } // end for
 } // end function
-
 
 
 var addContact = function() {
@@ -42,3 +41,11 @@ var addContact = function() {
 } // end function
 
 contactList();
+
+// function validateName(contactName) {
+//     var val = Boolean(contactName?.match(/^[A-Za-z\s]*$/));
+//     if(!val) {
+//         alert('eh');
+    
+//     }
+// }

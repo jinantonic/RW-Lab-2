@@ -31,13 +31,21 @@ table {
 }
 
 th {
-    /* '\
-    ' */
+    background: skyblue;
     font-weight: bold;
-    color: #fff;
+    color: black;
     padding: 1em .5em;
     vertical-align: middle;
+    cursor: pointer;
 }
+
+/* th[data-filter-vale] {
+    cursor: pointer;
+}
+
+th.active {
+    color: red;
+} */
     
 td {
     background: #fff;

@@ -12,7 +12,7 @@
     <body>
         <div class = "blueBox" id = "blueBox"></div> 
         <div class = "contact_input">
-            <input type = "text" id = "contactName" placeholder = "Contact Name"></label>
+            <input type = "text" id = "contactName" placeholder = "Contact Name" onclick="validateName(this.value)"></label>
             <input type = "text" id = mobileNumber placeholder = "Mobile Number"></label>
             <input type = "text" id = "email" placeholder = "Email"></label>
             <button type = "button" class = "addButton" onclick="addContact()">Add Contact</button><br><br>
@@ -25,11 +25,13 @@
 
         <h2>Contacts Summary</h2>
         <table class = "contactsTable" id = "contactsTable">
-                <!-- <tr>
+            <!-- <thead>
+                <tr>
                     <th>Name</th>
                     <th>Mobile</th>
                     <th>Email</th>
-                </tr> -->
+                </tr>
+            </thead> -->
         <table>
     </body>
 
