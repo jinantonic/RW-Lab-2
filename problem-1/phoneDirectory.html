@@ -7,32 +7,58 @@
         <h1>Phone Directory</h1>
         <link rel="stylesheet" href="/problem-1/phoneDirectory.css">
         <script src="/problem-1/phoneDirectory.js"></script>
-    </head>
+    </head>   
 
     <body>
         <div class = "blueBox" id = "blueBox"></div> 
         <div class = "contact_input">
-            <input type = "text" id = "contactName" placeholder = "Contact Name" onclick="validateName(this.value)"></label>
-            <input type = "text" id = mobileNumber placeholder = "Mobile Number"></label>
+            <input type = "text" id = "contactName" placeholder = "Contact Name"></label>
+            <input type = "number" id = "mobileNumber" placeholder = "Mobile Number"></label>
             <input type = "text" id = "email" placeholder = "Email"></label>
-            <button type = "button" class = "addButton" onclick="addContact()">Add Contact</button><br><br>
-            <button type = "button" class = "addButton" onclick="contactList()">Show Saved Contact</button><br><br>
+            <button id = "addButton">Add Contact</button>
         </div>
 
-        <!-- Can delete name or id if none of them are being used -->
-        <label for = "search" class = "search_input">Search contact by Mobile No: </label>
-        <input type = "text" id = "search" name = "search" class = "search_input">
+        <div class = "search_input">
+            <label for = "search" class = "search">Search contact by Mobile No: </label>
+            <input type = "text" id = "search">
+        </div>
 
-        <h2>Contacts Summary</h2>
-        <table class = "contactsTable" id = "contactsTable">
-            <!-- <thead>
+        <table id="contactsTable">
+            <thead>
                 <tr>
+                    <th>Index</th>
                     <th>Name</th>
                     <th>Mobile</th>
                     <th>Email</th>
                 </tr>
-            </thead> -->
-        <table>
-    </body>
+            </thead>
 
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Jina Park</td>
+                    <td>0838103838</td>
+                    <td>D19123917@mytudublin.ie</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Ovid Park</td>
+                    <td>0834829385</td>
+                    <td>D19111111@mytudublin.ie</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Skittles Park</td>
+                    <td>0873426932</td>
+                    <td>D16345364@mytudublin.ie</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Smudge Park</td>
+                    <td>0832935832</td>
+                    <td>D18125776@mytudublin.ie</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
 </html>
