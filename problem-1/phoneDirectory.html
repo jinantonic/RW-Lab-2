@@ -11,12 +11,12 @@
 
     <body>
         <div class = "blueBox" id = "blueBox"></div> 
-        <div class = "contact_input">
-            <input type = "text" id = "contactName" placeholder = "Contact Name"></label>
-            <input type = "number" id = "mobileNumber" placeholder = "Mobile Number"></label>
-            <input type = "text" id = "email" placeholder = "Email"></label>
-            <button id = "addButton">Add Contact</button>
-        </div>
+        <form class = "contact_input" form name = "contact_input" action = "#">
+            <input type = "text" id = "contactName" name ="contactName" placeholder = "Contact Name" maxlength ="20"></label>
+            <input type = "number" id = "mobileNumber" name = "mobileNumber" placeholder = "Mobile Number" maxlength ="10"></label>
+            <input type = "text" id = "email" name = "email" placeholder = "Email" maxlength ="39"></label>
+            <button id = "addButton" onclick = "checkName(document.contact_input.contactName); checkNumber(document.contact_input.contactNumber)">Add Contact</button>
+        </for>
 
         <div class = "search_input">
             <label for = "search" class = "search">Search contact by Mobile No: </label>

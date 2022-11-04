@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var numberBox = document.getElementById("mobileNumber");
     var emailBox = document.getElementById("email");
 
-    function createIndex(){
+    function createIndex() {
         for (var i = 0; i < rows.length; i++) {
             rows[i].dataset.index = i;
             if(i > 0){
@@ -37,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
             numberBox.value = '';
             emailBox.value = '';
         }
-        else{
-            alert('Please enter data!');
-        }
+        // else {
+        //     alert('Please enter data!');
+        // }
     }
 
     // function deleteRow(index){
@@ -60,4 +60,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     createIndex();
 
+
 });
+
+
+
+
+function checkName(contactName) {
+    var regexName = /^[a-z][a-z\s]*$/;
+    if(contactName.value.match(regexName)) {
+        return true;
+    }
+    else {
+        alert('Please enter a character or a space only for the contact name.');
+        return false;
+    }
+}
+
+function checkNumber(contactNumber) {
+    var regexNumber = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
+    if(checkNumber.value.match(regexNumber)) {
+        return true;
+    }
+    else {
+        alert('Mobile number should contain only numbers, nothing else.');
+        return false;
+    }
+}
