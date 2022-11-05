@@ -139,24 +139,40 @@ function sortContactsTable() {
 } // end function sortContactsTable()
 
 function searchContactsTable() {
-    var i;
     var input = document.getElementById("search");
     var filter = input.value.toUpperCase();
     var table = document.getElementById("contactsTable");
     var tr = table.getElementsByTagName("tr");
+    var count = 0;
     
-    for (i = 0; i < tr.length; i++) {
-        var td = tr[i].getElementsByTagName("td")[2];
-        if (td) {
-            var txtValue = td.textContent || td.innerText;
-            
-            if (txtValue.toUpperCase().indexOf(filter) > -1) {
-                tr[i].style.display = "";
+    // Loop through all the cells in the table, and hide those who don't match the search query
+    for (var i = 0; i < tr.length; i++) {
+        var td = tr[i].getElementsByTagName("td")[2]; // Based on the mobile number given in the search field
+
+        if (td) { // If there is a data
+            var txtValue = td.textContent || td.innerText; // Getting td value
+
+            // If the result is positive, we get the matching result we want
+            // If the result is negative, we didn't get the desired result
+            if (txtValue.toUpperCase().indexOf(filter) > -1) { // Convert that to upper case and get the index of current value
+                tr[i].style.display = ""; // If the result mathces, we display the content
+                
             } // end if
+
             else {
-                tr[i].style.display = "none";
-            } // end else
-        } // end if      
+                tr[i].style.display = "none"; // If the result doesn't matches up, we display none
+                
+                if (tr[i].style.display = "none") { // Count the number of the rows which display none 
+                    count++;
+                } // end if
+            } // end else     
+        } // end if  
+
+        if (count == tr.length) { // If all of the rows displays none, display the error message
+            noResult = "The number that you are looking for doesn't exist."
+            document.getElementById("noResult").innerHTML = noResult; // Display an error 
+        } // end if
     } // end for
 } // end function searchContactsTable()
+
 
