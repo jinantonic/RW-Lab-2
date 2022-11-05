@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function(event) {
-    var table = document.getElementById("contactsTable");
-    var rows = table.getElementsByTagName("tr");
-    var buttons = table.getElementsByTagName("button");
+    var contactsTable = document.getElementById("contactsTable");
+    var rows = contactsTable.getElementsByTagName("tr");
+    var button = contactsTable.getElementsByTagName("button");
     var nameBox = document.getElementById("contactName");
     var numberBox = document.getElementById("mobileNumber");
     var emailBox = document.getElementById("email");
@@ -15,40 +15,37 @@ document.addEventListener("DOMContentLoaded", function(event) {
             } // end if
         } // end for
 
-        for (var i = 0; i < buttons.length; i++) {
-            buttons[i].dataset.index = i+1;
+        for (var i = 0; i < button.length; i++) {
+            button[i].dataset.index = i+1;
         } // end for
     } // end function tableIndex()
 
-    function createCell(row, i, value) {
+    function tableCell(row, i, value) {
         let cell = row.insertCell(i);
         cell.innerHTML = value;
-    }
+    } // end function tableCell()
 
-    function addRow() {
+    function addTableRow() {
         if (nameBox.value !== '' && numberBox.value !== '' && emailBox.value !== '') {
-            let row = table.insertRow(-1);
-            createCell(row,0,'');
-            createCell(row, 1, nameBox.value);
-            createCell(row, 2, numberBox.value);
-            createCell(row, 3, emailBox.value);
+            let row = contactsTable.insertRow(-1);
+            tableCell(row, 0, '');
+            tableCell(row, 1, nameBox.value);
+            tableCell(row, 2, numberBox.value);
+            tableCell(row, 3, emailBox.value);
             tableIndex();
             nameBox.value = '';
             numberBox.value = '';
             emailBox.value = '';
         } // end if
-    }
+    } // end function addTableRow()
 
-    var clickEvent = document.addEventListener('click',function(event) {
+    document.addEventListener('click', function(event) {
         if (event.target.id === 'addButton' && validation() == true){
-            addRow();
-        }
+            addTableRow();
+        } //end if
         event.preventDefault();
     });
-
     tableIndex();
-
-
 });
 
 
