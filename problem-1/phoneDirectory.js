@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var table = document.getElementById("contactsTable");
     var rows = table.getElementsByTagName("tr");
     var buttons = table.getElementsByTagName("button");
-    // var newbutton = document.getElementById("addButton");
     var nameBox = document.getElementById("contactName");
     var numberBox = document.getElementById("mobileNumber");
     var emailBox = document.getElementById("email");
@@ -32,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
             createCell(row,0,'');
             createCell(row, 1, nameBox.value);
             createCell(row, 2, numberBox.value);
-            // createCell(row,3,'<button class="delete">Delete</button>');
             createCell(row, 3, emailBox.value);
             tableIndex();
             nameBox.value = '';
@@ -41,16 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         } // end if
     }
 
-    // function deleteRow(index){
-    //     let row = document.querySelector('[data-index="'+index+'"]');
-    //     row.parentNode.removeChild(row);s
-    //     createIndex();
-    // }
-
     var clickEvent = document.addEventListener('click',function(event) {
-        // if(event.target.classList.contains('delete')){
-        //     deleteRow(event.target.getAttribute('data-index'));
-        // }
         if (event.target.id === 'addButton' && validation() == true){
             addRow();
         }
@@ -104,3 +93,51 @@ function validation() {
     return true;
 } // end function validation
 
+function sortContactsTable() {
+    var rows, swap, i, x, y, swapHappening, order, count = 0;
+    var contactsTable = document.getElementById("contactsTable");
+    swap = true;
+    order = "asc";  // Set the sorting order as ascending
+
+    // A while loop that will be executed until no switching has to be done
+    while (swap) {
+        swap = false; // No swapping is done yet
+        rows = contactsTable.getElementsByTagName("tr");
+        
+        // Loop through all table rows (except the first, which contains table headers):
+        for (i = 1; i < rows.length - 1; i++) {  // i starts from 1 because i = 0 is the header
+            swapHappening = false; // No swapping yet
+
+            x = rows[i].getElementsByTagName("td")[1]; // Compare 2 rows, current row and the next row
+            y = rows[i + 1].getElementsByTagName("td")[1];
+
+            if (order == "asc") { // If it is an ascending order
+                if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { // Convert the characters to lower case and compare them, toUpperCase() would work as well
+                    swapHappening = true; 
+                    break;
+                } // end inner if
+            }  // end if 
+
+            else if (order == "desc") { // If it is an descending order
+                if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                    swapHappening = true;
+                    break;
+                } // end inner if
+            } // end else if
+        } // end for
+
+        if (swapHappening) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); // Swap the rows
+            swap = true;
+            count++; // Increase the count by 1
+        } // end if 
+
+        else {
+            if (count == 0 && order == "asc") { // If there was no swapping and the order is set as ascending, 
+                order = "desc"; // Change it to descending order 
+                swap = true; // Run the while loop
+            } // end inner if
+        } // end else
+    } // end while
+  }
+  

@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Jina's Phone Directory</title>
         <h1>Phone Directory</h1>
-        <link rel="stylesheet" href="/problem-1/phoneDirectory.css">
-        <script src="/problem-1/phoneDirectory.js"></script>
-        <script src="tablesort.min.js"></script>
+        <link rel = "stylesheet" href = "/problem-1/phoneDirectory.css">
+        <script src = "/problem-1/phoneDirectory.js"></script>
+        <script src = "tablesort.min.js"></script>
     </head>   
 
     <body>
         <div class = "blueBox" id = "blueBox"></div> 
         
         <form class = "contact_input" form name = "contact_input" action = "#">
-            <input type = "text" id = "contactName" name ="contactName" placeholder = "Contact Name" maxlength ="20"></label>
-            <input type = "text" id = "mobileNumber" name = "mobileNumber" placeholder = "Mobile Number" maxlength ="10"></label>
-            <input type = "text" id = "email" name = "email" placeholder = "Email" maxlength ="39"></label>
+            <input type = "text" id = "contactName" name ="contactName" placeholder = "Contact Name" maxlength = "20"></label>
+            <input type = "text" id = "mobileNumber" name = "mobileNumber" placeholder = "Mobile Number" maxlength = "10"></label>
+            <input type = "text" id = "email" name = "email" placeholder = "Email" maxlength = "39"></label>
             <button id = "addButton" onclick = "return validation()">Add Contact</button>
 
             <div class = "emptyError" id = "emptyError"></div>
@@ -30,11 +30,11 @@
             <input type = "text" id = "search">
         </div>
 
-        <table id="contactsTable" name = "contactsTable">
+        <table id = "contactsTable" name = "contactsTable">
             <thead>
                 <tr>
                     <th>Index</th>
-                    <th>Name</th>
+                    <th id = "sortHeader" onclick="sortContactsTable()">Name</th>
                     <th>Mobile</th>
                     <th>Email</th>
                 </tr>
@@ -43,25 +43,25 @@
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td>Jina Park</td>
+                    <td>D</td>
                     <td>0838103838</td>
                     <td>D19123917@mytudublin.ie</td>
                 </tr>
                 <tr>
                     <td>2</td>
-                    <td>Ovid Park</td>
+                    <td>B</td>
                     <td>0834829385</td>
                     <td>D19111111@mytudublin.ie</td>
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>Skittles Park</td>
+                    <td>A</td>
                     <td>0873426932</td>
                     <td>D16345364@mytudublin.ie</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>Smudge Park</td>
+                    <td>C</td>
                     <td>0832935832</td>
                     <td>D18125776@mytudublin.ie</td>
                 </tr>

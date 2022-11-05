@@ -36,9 +36,13 @@ th {
     font-weight: bold;
     color: black;
     vertical-align: middle;
-    cursor: pointer;
+    
     border: solid 2px black;
     padding: 5px;
+}
+
+#sortHeader {
+    cursor: pointer;
 }
 
 td {
