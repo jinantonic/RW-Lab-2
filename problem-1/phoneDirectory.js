@@ -164,7 +164,6 @@ function searchContactsTable() {
             // If the result is negative, we didn't get the desired result
             if (txtValue.toUpperCase().indexOf(filter) > -1) { // Convert that to upper case and get the index of current value
                 tr[i].style.display = ""; // If the result mathces, we display the content
-                
             } // end if
 
             else {
@@ -176,7 +175,7 @@ function searchContactsTable() {
             } // end else     
         } // end if  
 
-        if (count == tr.length) { // If all of the rows displays none, display the error message
+        if (count == tr.length - 1) { // If all of the rows displays none, display the error message
             noResult = "The number that you are looking for doesn't exist."
             document.getElementById("noResult").innerHTML = noResult; // Display an error 
         } else {
