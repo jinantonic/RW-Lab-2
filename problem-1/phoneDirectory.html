@@ -19,10 +19,10 @@
             <input type = "text" id = "email" name = "email" placeholder = "Email" maxlength = "39"></label>
             <button id = "addButton" onclick = "return validation()">Add Contact</button>
 
-            <div class = "emptyError" id = "emptyError"></div>
-            <div class = "nameError" id = "nameError"></div>
-            <div class = "numberError" id = "numberError"></div>
-            <div class = "emailError" id = "emailError"></div>
+            <div class = "error" id = "emptyError"></div>
+            <div class = "error" id = "nameError"></div>
+            <div class = "error" id = "numberError"></div>
+            <div class = "error" id = "emailError"></div>
         </form>
 
         <div class = "search_input">
@@ -68,6 +68,6 @@
             </tbody>
         </table>
 
-        <div class = "noResult" id = "noResult"></div>
+        <div class = "error" id = "noResult"></div>
     </body>
 </html>

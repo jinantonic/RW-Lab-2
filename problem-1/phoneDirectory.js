@@ -56,36 +56,44 @@ function validation() {
     var regexName = /^[a-zA-Z ]*$/;
     var regexNumber = /^[0-9]*$/;
     var regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-
-    if (contactName == "" || mobileNumber == "" || email == "") { // If all the fields are empty,
-        emptyError = "All fields must be entered."
-        document.getElementById("emptyError").innerHTML = emptyError; // display an error 
-        return false;
-    } // end if
-    
-    if (!contactName.match(regexName)) {  // If the given input doesn't contain only characters or spaces,
-        nameError = "Please enter a character or a space only for the contact name."
-        document.getElementById("nameError").innerHTML = nameError; // display an error 
-        return false;
-    } // end if
-
-    if (!mobileNumber.match(regexNumber)) { // If the given input doesn't contain only numbers,
-        numberError = "Mobile number should contain only numbers, nothing else."
-        document.getElementById("numberError").innerHTML = numberError; // display an error 
-        return false;
-    } // end if
-
     /* Email validation
         - Upper case and lower case letters (A-Z, a-z)
         - Numeric characters (0-9)
         - Special characters (- ! # $ % & ' * + - / = ? ^ _ ` { | } ~
         - Period, dot, or full stop (.) with the condition that it cannot be the first or last letter of the email and cannot repeat one after another
     */
+
+    if (contactName == "" || mobileNumber == "" || email == "") { // If all the fields are empty,
+        emptyError = "All fields must be entered."
+        document.getElementById("emptyError").innerHTML = emptyError; // Display an error 
+        return false;
+    } else {
+        document.getElementById("emptyError").innerHTML = ""; // Make div error dissapear when the correct input is taken
+    } // end if else
+    
+    if (!contactName.match(regexName)) {  // If the given input doesn't contain only characters or spaces,
+        nameError = "Please enter a character or a space only for the contact name."
+        document.getElementById("nameError").innerHTML = nameError; // Display an error 
+        return false;
+    } else {
+        document.getElementById("nameError").innerHTML = "";
+    } // end if else
+
+    if (!mobileNumber.match(regexNumber)) { // If the given input doesn't contain only numbers,
+        numberError = "Mobile number should contain only numbers, nothing else."
+        document.getElementById("numberError").innerHTML = numberError; // Display an error 
+        return false;
+    } else {
+        document.getElementById("numberError").innerHTML = "";
+    } // end if else
+
     if (!email.match(regexEmail)) { // If the given input doesn't contain follow the email format,
         emailError = "Invalid email address."
-        document.getElementById("emailError").innerHTML = emailError; // display an error 
+        document.getElementById("emailError").innerHTML = emailError; // Display an error 
         return false;
-    } // end if
+    } else {
+        document.getElementById("emailError").innerHTML = "";
+    } // end if else
 
     return true;
 } // end function validation
@@ -171,7 +179,9 @@ function searchContactsTable() {
         if (count == tr.length) { // If all of the rows displays none, display the error message
             noResult = "The number that you are looking for doesn't exist."
             document.getElementById("noResult").innerHTML = noResult; // Display an error 
-        } // end if
+        } else {
+            document.getElementById("noResult").innerHTML = ""; // Make div error dissapear when the correct input is taken
+        } // end if else
     } // end for
 } // end function searchContactsTable()
 
