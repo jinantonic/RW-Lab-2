@@ -136,5 +136,27 @@ function sortContactsTable() {
             } // end inner if
         } // end else
     } // end while
-  }
-  
+} // end function sortContactsTable()
+
+function searchContactsTable() {
+    var i;
+    var input = document.getElementById("search");
+    var filter = input.value.toUpperCase();
+    var table = document.getElementById("contactsTable");
+    var tr = table.getElementsByTagName("tr");
+    
+    for (i = 0; i < tr.length; i++) {
+        var td = tr[i].getElementsByTagName("td")[2];
+        if (td) {
+            var txtValue = td.textContent || td.innerText;
+            
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+            } // end if
+            else {
+                tr[i].style.display = "none";
+            } // end else
+        } // end if      
+    } // end for
+} // end function searchContactsTable()
+
