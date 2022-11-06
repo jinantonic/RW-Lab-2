@@ -38,7 +38,7 @@ From the terminal, I can see it is displaying all of the contents including user
 
 </br></br>
 ![Sketch](/images/con4.png) 
-So I came with a second way to display the contents displaying only titles in a prettier form using Array.forEach.
+So I came up with a second way to display the contents of titles only in a prettier form using Array.forEach.
 
 </br></br>
 ![Sketch](/images/con5.png) 
@@ -46,7 +46,7 @@ Displaying the right contents on terminal.
 
 </br></br>
 ![Sketch](/images/con6.png) 
-Third way to display the contents displaying only titles in a plain text form usng Array.forEach. 
+Third way to display the contents of titles only in a plain text form usng Array.forEach. 
 
 </br></br>
 ![Sketch](/images/con7.png) 
