@@ -1,42 +1,92 @@
-/* Universal selector which will be apllied to every element */
 * {
     box-sizing: border-box;
-    font-family: "Trirong", serif;
+    font-family: helvetica;
+    color: #4A3F35; 
 }
+
+h1 {
+    color: #4A3F35;
+}
+
+body {
+    background-color: beige;
+    margin: 50px;
+}
+
+/* Username search box */
 input {
-    width: 70%;
+    width: 75%;
+    margin: 0 auto;
+    background-color: #4A3F35;
+    color: white; 
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
 }
 
 h2 {
     display: none;
 }
 
-img{
-    margin-left: 50px;
+::placeholder {
+    color: #f3eeea;
+}
+
+#searchButton, #resetButton {
+    background-color: #f3eeea;
+    color: #4A3F35; 
+    border-radius: 5px;
+    border: 2px solid #4A3F35;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#searchButton:hover, #resetButton:hover {
+    background-color: #B9AC92;
+}
+
+img {
+    margin-left: 10px;
     margin-top: 15px;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
+    border: 8px solid #4A3F35;
 }
 
 table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 2px solid #4A3F35;
+    border-collapse: collapse;
+    overflow: auto;
+    padding: 13px;
 }
 
-th, td {
-  padding: 5px;
+/* h4 {
+    margin-left: 5px;
+    font-weight: bold;
+} */
+
+/* tbody > tr {
+    padding: 20px;
+} */
+
+tr:nth-child(odd) {
+    background-color: #FAF7F0;
 }
+
+tr:nth-child(even) {
+    background-color: #EEF2E6;
+}
+
 .infoDump {
 	width: 40%;
 	float: left;
 	position: relative;	
-	
 }
+
 .userDetail {
     float: left;
     width: 40%;
-	position: relative;
 }
 
 .repoDetail {

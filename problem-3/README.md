@@ -3,7 +3,7 @@
 You will build a web application for querying user information from the Github
 API that looks like the following:
 </br></br>
-![Sketch](/images/p3.png)
+![Sketch](/images/g1.png)
 </br></br>
 
 Notes:
@@ -18,31 +18,21 @@ Notes:
 
 
 # My solution
+</br></br>
+![Sketch](/images/main.png)
+This is the main page of the application.
 
 </br></br>
-
-![Sketch](/images/exts.png)
-
-
-</br></br>
-
-![Sketch](/images/b1.png)
-
-
+![Sketch](/images/tb1.png)
+Entered my github username and returned this result and checked that it is displaying all of the descriped contents. I designed the able as it is described in the picture above.
 
 </br></br>
-
-![Sketch](/images/popup.png)
-
-
-</br></br>
-
-![Sketch](/images/alert.png)
-
-
+![Sketch](/images/tb2.png)
+Tried with another design to display the table, looks more organised. 
 
 </br></br>
-
+![Sketch](/images/tb3.png)
+Made it to display more contents on the table.
 
 
 

@@ -44,7 +44,6 @@ Second way to display the contents displaying only titles in a prettier form usi
 ![Sketch](/images/con5.png) 
 Displaying the right contents on terminal.
 
-
 </br></br>
 ![Sketch](/images/con6.png) 
 Third way to display the contents displaying only titles in a plain text form usng Array.forEach. 
