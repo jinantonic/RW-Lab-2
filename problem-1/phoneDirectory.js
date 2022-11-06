@@ -179,5 +179,3 @@ function searchContactsTable() {
         } // end if else
     } // end for
 } // end function searchContactsTable()
-
-

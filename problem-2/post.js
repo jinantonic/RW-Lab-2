@@ -57,6 +57,3 @@ const queries = async() => {
 }
 
 queries();
-
-
-
