@@ -7,6 +7,9 @@ input {
     width: 70%;
 }
 
+h2 {
+    display: none;
+}
 
 img{
     margin-left: 50px;
@@ -25,7 +28,9 @@ th, td {
   padding: 5px;
 }
 .infoDump {
-	clear:both;   
+	width: 40%;
+	float: left;
+	position: relative;	
 	
 }
 .userDetail {

@@ -46,3 +46,18 @@ Displaying the div error message when the user enters something else than only n
 ![Sketch](/images/p6.png)
 Displaying the div error message when the user enters the Email in an incorrect form. Email input field can take 39 characters.
 
+</br></br>
+![Sketch](/images/p7.png)
+Display the contents of phone book. I added some contact data already in the table.
+
+</br></br>
+![Sketch](/images/add.png)
+Checked that the valid contacts are getting added sequentially in the table.
+
+</br></br>
+![Sketch](/images/asc.png)
+Once the Name header is clicked, it sorts the contents by ascending order of the contact name.
+
+</br></br>
+![Sketch](/images/des.png)
+Further click sorts the contents by descending order of the contact name.

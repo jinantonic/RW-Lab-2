@@ -1,5 +1,26 @@
 
 function getData() {
+	const con = document.getElementById('con');
+	const newDiv = document.createElement("h3");
+	newDiv.className = "infoDump";
+	newDiv.innerHTML = "User Profile";
+	const newDiv2 = document.createElement("h3");
+	newDiv2.className = "infoDump";
+	newDiv2.innerHTML = "User Repo";
+	con.insertBefore(newDiv, userDetail);
+	con.insertBefore(newDiv2, userDetail);
+
+	if(newDiv.hasChildNodes()){
+		while (tbody.firstChild) {
+			tbody.removeChild(tbody.lastChild);
+		}
+	}
+	rows.forEach(e => {
+		const tr = document.createElement('tr')
+		tr.innerHTML = rowHtml(e)
+		tbody.appendChild(tr)
+	})
+
 	const username = document.getElementById('username').value;
 	fetch(`https://api.github.com/users/${username}`)
 	//fetch(`https://api.github.com/users/jinantonic`)
@@ -40,7 +61,7 @@ function getData() {
 	  
 	const addRows = (rows) => {
 		const tbody = document.querySelector('#repoTable tbody')
-		if(tbody.hasChildNodes()) {
+		if(tbody.hasChildNodes()){
 			while (tbody.firstChild) {
 				tbody.removeChild(tbody.lastChild);
 			}
@@ -58,6 +79,5 @@ function getData() {
 		html += `<td>${row.name}</td><td>${row.description}</td>`
 		return html
 	}
-
 
 }
