@@ -1,4 +1,10 @@
 function getData() {
+	const searchButton = document.getElementById('searchButton');	
+	// let out = "";
+
+	// searchButton.onclick = function() {
+	// }
+
 	const username = document.getElementById('username').value;
 	fetch(`https://api.github.com/users/${username}`)
 	//fetch(`https://api.github.com/users/jinantonic`)
@@ -16,11 +22,13 @@ function getData() {
 	}))
 
 	function fetchRepos(username) {
+		//document.getElementById("repoTable").innerHTML = ""; 
+	
 		return fetch(`https://api.github.com/users/${username}/repos`)
 		.then((response) => { return response.json() })
 		.then(json => { return json })
 		.catch((err) => { console.log('Fetch Error :-S', err);}); 
-	}
+	}	
 	  
 	const getRepos = async(username) => {
 		const ret = await fetchRepos(username)
@@ -30,12 +38,14 @@ function getData() {
 	(async function() {
 		//const repos = await getRepos('bryanmccarthy')
 		//const repos = await getRepos('jinantonic')
+		//
 		const repos = await getRepos(username)
 		const [rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8] = repos
-		addTwoRows([rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8])
+		addRows([rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8])
+		
 	})();
 	  
-	const addTwoRows = (rows) => {
+	const addRows = (rows) => {
 		rows.forEach(e => {
 			const tbody = document.querySelector('#repoTable tbody')
 			const tr = document.createElement('tr')
@@ -45,14 +55,23 @@ function getData() {
 	}
 	  
 	const rowHtml = row => {
-		html = ''
+		//html = '<thead><tr><th>Repository<br>Name:</th><th>Description</th></tr></thead>'
+		html = '';
 		html += `<td>${row.name}</td><td>${row.description}</td>`
 		return html
 	}
 
-	// function resetTable() {
-	// 	document.getElementById("repoTable").innerHTML = ""; 
+	// const rowHtml = row => {
+	// 	//html = '<thead><tr><th>Repository<br>Name:</th><th>Description</th></tr></thead>'
+	// 	html = '';
+	// 	html += `<tbody><td>${row.name}</td><td>${row.description}</td></tbody>`
+	// 	return html
 	// }
+	function resetTable() {
+		
+	}
+	
+		
 }
 
 getData();
