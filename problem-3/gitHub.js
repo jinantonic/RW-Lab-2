@@ -1,3 +1,9 @@
+const newDiv = document.createElement("h3");
+newDiv.className = "infoDump";
+newDiv.innerHTML = "User Profile";
+const newDiv2 = document.createElement("h3");
+newDiv2.className = "infoDump";
+newDiv2.innerHTML = "User Repo";
 
 function getData() {
 	const con = document.getElementById('con');
@@ -7,19 +13,10 @@ function getData() {
 	const newDiv2 = document.createElement("h3");
 	newDiv2.className = "infoDump";
 	newDiv2.innerHTML = "User Repo";
-	con.insertBefore(newDiv, userDetail);
-	con.insertBefore(newDiv2, userDetail);
-
-	if(newDiv.hasChildNodes()){
-		while (tbody.firstChild) {
-			tbody.removeChild(tbody.lastChild);
-		}
+	if(con.querySelector('.infoDump') == null){
+		con.insertBefore(newDiv, userDetail);
+		con.insertBefore(newDiv2, userDetail);
 	}
-	rows.forEach(e => {
-		const tr = document.createElement('tr')
-		tr.innerHTML = rowHtml(e)
-		tbody.appendChild(tr)
-	})
 
 	const username = document.getElementById('username').value;
 	fetch(`https://api.github.com/users/${username}`)
@@ -65,6 +62,7 @@ function getData() {
 			while (tbody.firstChild) {
 				tbody.removeChild(tbody.lastChild);
 			}
+
 		}
 		rows.forEach(e => {
 			const tr = document.createElement('tr')
@@ -80,4 +78,27 @@ function getData() {
 		return html
 	}
 
+	function displayH() {
+		var h2 = document.getElementsByTagName('h2');
+
+		// get the current value of the clock's display property
+		var displaySetting = h2.style.display;
+	
+		// also get the clock button, so we can change what it says
+		//var clockButton = document.getElementById('clockButton');
+	
+		// now toggle the clock and the button text, depending on current state
+		if (displaySetting == 'block') {
+		  // clock is visible. hide it
+		  h2.style.display = 'none';
+		  // change button text
+		  //clockButton.innerHTML = 'Show clock';
+		}
+		else {
+		  // clock is hidden. show it
+		  h2.style.display = 'block';
+		  // change button text
+		  //clockButton.innerHTML = 'Hide clock';
+		}
+	  }
 }
