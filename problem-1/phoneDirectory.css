@@ -2,47 +2,62 @@ html {
     text-align: center;
 }
 
-.blueBox {
+* {
+    box-sizing: border-box;
+    font-family: "Trirong", serif;
+}
+
+#blueBox {
     margin: 0 0 10% 10%;
-    border: 5px solid #5584AC;
+    border: 5px solid #607EAA;
     border-radius: 20px;
-    background: #34ace8;
-    width: 700px;
+    background: #C4DDFF;
+    width: 80%;
     height: 200px;
-    top: 90px;
+    top: 100px;
     position: absolute;
     z-index: -100;
 }
 
 .contact_input {
-    /* font-size: 15px; */
     margin-top: 100px;
 }   
 
+#addButton {
+    background-color: white;
+    color: #1C3879;
+    border: 2px solid #607EAA;
+    border-radius: 5px;
+}
+
 .search_input {
-    margin-top: 150px;
+    margin-top: 200px;
+}
+
+#contactName, #mobileNumber, #email, #search {
+    border: 1px solid #607EAA;
+    border-radius: 3px;
 }
 
 table {
     width: 100%;
-    margin-top: 300px;
+    margin-top: 250px;
     border-collapse: collapse;
     border: solid 2px black;
     overflow: auto;
 }
 
 th {
-    background: skyblue;
+    background: #C4DDFF;
     font-weight: bold;
     color: black;
     vertical-align: middle;
-    
     border: solid 2px black;
     padding: 5px;
 }
 
-#sortHeader {
-    cursor: pointer;
+tbody tr:nth-child(odd) {
+    background-color: #F2F2F2;
 }
 
 td {
@@ -50,6 +65,6 @@ td {
     padding: 5px;
 }
 
-tbody tr:nth-child(odd) {
-    background-color: #F2F2F2;
+#sortHeader {
+    cursor: pointer;
 }
