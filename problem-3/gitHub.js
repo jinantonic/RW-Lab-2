@@ -29,7 +29,8 @@ function getData() {
 	  
 	(async function() {
 		//const repos = await getRepos('bryanmccarthy')
-		const repos = await getRepos('jinantonic')
+		//const repos = await getRepos('jinantonic')
+		const repos = await getRepos(username)
 		const [rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8] = repos
 		addTwoRows([rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8])
 	})();
@@ -48,6 +49,10 @@ function getData() {
 		html += `<td>${row.name}</td><td>${row.description}</td>`
 		return html
 	}
+
+	// function resetTable() {
+	// 	document.getElementById("repoTable").innerHTML = ""; 
+	// }
 }
 
 getData();
