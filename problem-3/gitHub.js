@@ -1,3 +1,4 @@
+
 function getData() {
 	const username = document.getElementById('username').value;
 	fetch(`https://api.github.com/users/${username}`)
@@ -39,8 +40,10 @@ function getData() {
 	  
 	const addRows = (rows) => {
 		const tbody = document.querySelector('#repoTable tbody')
-		if(tbody.hasChildNodes()){
-			myNode.innerHTML = '';
+		if(tbody.hasChildNodes()) {
+			while (tbody.firstChild) {
+				tbody.removeChild(tbody.lastChild);
+			}
 		}
 		rows.forEach(e => {
 			const tr = document.createElement('tr')
@@ -55,5 +58,6 @@ function getData() {
 		html += `<td>${row.name}</td><td>${row.description}</td>`
 		return html
 	}
+
 
 }

@@ -3,14 +3,10 @@
     box-sizing: border-box;
     font-family: "Trirong", serif;
 }
-
 input {
     width: 70%;
 }
 
-h2 {
-    display: none;
-}
 
 img{
     margin-left: 50px;

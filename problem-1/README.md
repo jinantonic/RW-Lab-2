@@ -27,14 +27,22 @@ Before adding a contact, the following validations should occur:
 
 
 # My solution
-![Sketch](/images/1x4.png)
+![Sketch](/images/p2.png)
 This is the overall look of the application.
 
-</br></br></br>
+</br></br>
+![Sketch](/images/p3.png)
+Displaying the div error message when all fields are empty.
 
-![Sketch](/images/2x2.png)
+</br></br>
+![Sketch](/images/p4.png)
+Displaying the div error message when the user enters something else than a space or characters for Name.
 
-</br></br></br>
+</br></br>
+![Sketch](/images/p5.png)
+Displaying the div error message when the user enters something else than only numbers for Mobile.
 
-![Sketch](/images/4x1.png)</br>
+</br></br>
+![Sketch](/images/p6.png)
+Displaying the div error message when the user enters the Email in an incorrect form.
 

@@ -5,41 +5,29 @@
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
         <title>Jina's GitHub API</title>
         <h1>GitHub API</h1>
-        <link rel = "stylesheet" href = "/problem-3/gitHub.css">
+        <link rel = "stylesheet" href = "gitHub.css">
         <link rel = "stylesheet" href = "https://fonts.googleapis.com/css?family=Trirong">
-        <script src = "/problem-3/gitHub.js"></script>  
+        <script src = "gitHub.js"></script>  
     </head> 
 
     <body>
         <div class = "container">
             <div class = "search-area">
                 <input type = "text" id = "username" placeholder = "Enter Github Username" autocomplete="off">
-                <button id = "searchButton" onclick="getData()">Get Details</button>
-                <!-- <button id = "searchButton" onclick="getData(); return displayH()">Get Details</button> -->
-                <button id = "resetButton" onclick="window.location.reload()">Reset Page</button>
+                <button id = "searchButton" onclick="getData();">Get Details</button>
+                <button id = "searchButton" onclick="window.location.reload()">Reset Page</button>
             </div>
 
             <div class = "userDetail" id = "userDetail">
                 <h2 id = "headerP">User Profile</h2>
                 <div class = "profile" id = "profile"></div>
-                <!-- <div class = "card">
-                    <h3 id = "name"></h3>
-                    <h3 id = "login"></h3>
+                <div class = "card">
+                    <h3 id = "name"></h1>
+                    <h3 id = "login"></h2>
                     <strong><p id = "bio"></p></strong>
                     <strong><p id = "email"></p></strong>
                     <strong><p id = "location"></p></strong>
                     <strong><p id = "gists"></p></strong>
-                </div> -->
-                <div class = "card">
-                    <ul>
-                        <li><h3 id = "name"></h3></li>
-                        <li><h3 id = "login"></h3></li>
-                        <li><h3 id = "bio"></h3></li>
-                        <li><h3 id = "email"></h3></li>
-                        <li><h3 id = "location"></h3></li>
-                        <li><h3 id = "numRepos"></h3></li>
-                        <li><h3 id = "gists"></h3></li>
-                    </ul>
                 </div>
             </div>
 
