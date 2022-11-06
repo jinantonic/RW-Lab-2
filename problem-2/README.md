@@ -24,7 +24,7 @@ For each answer, use console.log() to display the data (i.e. you do not have to 
 Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts.
 
 </br></br>
-![Sketch](/images/con1.png) 
+![Sketch](/images/con1.png)</br>
 This is the part of my terminal screenshot. I can see all of the data is getting loaded and displayed.
 
 </br></br>
