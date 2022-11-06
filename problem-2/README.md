@@ -20,7 +20,7 @@ For each answer, use console.log() to display the data (i.e. you do not have to 
 ## 1st part 
 
 </br>
-![Sketch](/images/fetch.png)  
+![Sketch](/images/con.png)  
 Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts.
 
 </br></br>
