@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     } // end function addTableRow()
 
     document.addEventListener('click', function(event) {
-        if (event.target.id === 'addButton' && validation() == true){
+        if (event.target.id === 'addButton' && validation() == true) {
             addTableRow();
         } //end if
         event.preventDefault();
@@ -56,15 +56,16 @@ function validation() {
     var regexName = /^[a-zA-Z ]*$/;
     var regexNumber = /^[0-9]*$/;
     var regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-    /* Email validation
+    /* 
+        Email validation
         - Upper case and lower case letters (A-Z, a-z)
         - Numeric characters (0-9)
         - Special characters (- ! # $ % & ' * + - / = ? ^ _ ` { | } ~
-        - Period, dot, or full stop (.) with the condition that it cannot be the first or last letter of the email and cannot repeat one after another
+        - Period, dot, or full stop (.) which cannot be the first or last letter of the email & can't be repeated one after another
     */
 
     if (contactName == "" || mobileNumber == "" || email == "") { // If all the fields are empty,
-        emptyError = "All fields must be entered."
+        emptyError = "All fields must be entered !"
         document.getElementById("emptyError").innerHTML = emptyError; // Display an error 
         return false;
     } else {
@@ -72,7 +73,7 @@ function validation() {
     } // end if else
     
     if (!contactName.match(regexName)) {  // If the given input doesn't contain only characters or spaces,
-        nameError = "Please enter a character or a space only for the contact name."
+        nameError = "Please enter a character or a space only for the contact name !"
         document.getElementById("nameError").innerHTML = nameError; // Display an error 
         return false;
     } else {
@@ -80,7 +81,7 @@ function validation() {
     } // end if else
 
     if (!mobileNumber.match(regexNumber)) { // If the given input doesn't contain only numbers,
-        numberError = "Mobile number should contain only numbers, nothing else."
+        numberError = "Mobile number should contain only numbers, nothing else !"
         document.getElementById("numberError").innerHTML = numberError; // Display an error 
         return false;
     } else {
@@ -88,7 +89,7 @@ function validation() {
     } // end if else
 
     if (!email.match(regexEmail)) { // If the given input doesn't contain follow the email format,
-        emailError = "Invalid email address."
+        emailError = "Invalid email address !"
         document.getElementById("emailError").innerHTML = emailError; // Display an error 
         return false;
     } else {
@@ -101,7 +102,7 @@ function validation() {
 function sortContactsTable() {
     var rows, swap, i, x, y, swapHappening, order, count = 0;
     var contactsTable = document.getElementById("contactsTable");
-    swap = true;
+    swap = true; // Set swap variable as true
     order = "asc";  // Set the sorting order as ascending
 
     // A while loop that will be executed until no switching has to be done
@@ -118,31 +119,29 @@ function sortContactsTable() {
 
             if (order == "asc") { // If it is an ascending order
                 if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) { // Convert the characters to lower case and compare them, toUpperCase() would work as well
-                    swapHappening = true; 
+                    swapHappening = true; // Swap it
                     break;
                 } // end inner if
             }  // end if 
 
             else if (order == "desc") { // If it is an descending order
                 if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                    swapHappening = true;
+                    swapHappening = true; // Swap it
                     break;
                 } // end inner if
             } // end else if
         } // end for
 
-        if (swapHappening) {
+        if (swapHappening) { 
             rows[i].parentNode.insertBefore(rows[i + 1], rows[i]); // Swap the rows
             swap = true;
             count++; // Increase the count by 1
-        } // end if 
-
-        else {
+        } else {
             if (count == 0 && order == "asc") { // If there was no swapping and the order is set as ascending, 
                 order = "desc"; // Change it to descending order 
                 swap = true; // Run the while loop
             } // end inner if
-        } // end else
+        } // end if else
     } // end while
 } // end function sortContactsTable()
 
@@ -164,19 +163,17 @@ function searchContactsTable() {
             // If the result is negative, we didn't get the desired result
             if (txtValue.toUpperCase().indexOf(filter) > -1) { // Convert that to upper case and get the index of current value
                 tr[i].style.display = ""; // If the result mathces, we display the content
-            } // end if
-
-            else {
+            } else {
                 tr[i].style.display = "none"; // If the result doesn't matches up, we display none
                 
                 if (tr[i].style.display = "none") { // Count the number of the rows which display none 
                     count++;
-                } // end if
-            } // end else     
+                } // end inner if
+            } // end if else     
         } // end if  
 
         if (count == tr.length - 1) { // If all of the rows displays none, display the error message
-            noResult = "The number that you are looking for doesn't exist."
+            noResult = "The number that you are looking for doesn't exist !"
             document.getElementById("noResult").innerHTML = noResult; // Display an error 
         } else {
             document.getElementById("noResult").innerHTML = ""; // Make div error dissapear when the correct input is taken

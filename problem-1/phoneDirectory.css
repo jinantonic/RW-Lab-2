@@ -41,7 +41,7 @@ html {
 
 table {
     width: 100%;
-    margin-top: 250px;
+    margin-top: 200px;
     border-collapse: collapse;
     border: solid 2px black;
     overflow: auto;
@@ -67,4 +67,8 @@ td {
 
 #sortHeader {
     cursor: pointer;
+}
+
+.error {
+    color: #1C3879;
 }
