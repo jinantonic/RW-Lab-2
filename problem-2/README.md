@@ -51,6 +51,7 @@ Third way to display only titles in a plain text form usng Array.forEach().
 </br></br>
 ![Sketch](/images/con7.png) 
 Displaying the right contents on terminal.
+</br></br>
 
 ## 2nd part 
 ![Sketch](/images/con8.png)
