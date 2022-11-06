@@ -36,13 +36,13 @@ Displaying the div error message when all fields are empty.
 
 </br></br>
 ![Sketch](/images/p4.png)
-Displaying the div error message when the user enters something else than a space or characters for Name.
+Displaying the div error message when the user enters something else than a space or characters for Name. Name input field can take 20 characters in length or less.
 
 </br></br>
 ![Sketch](/images/p5.png)
-Displaying the div error message when the user enters something else than only numbers for Mobile.
+Displaying the div error message when the user enters something else than only numbers for Mobile. Mobile input field can take 10 characters. 
 
 </br></br>
 ![Sketch](/images/p6.png)
-Displaying the div error message when the user enters the Email in an incorrect form.
+Displaying the div error message when the user enters the Email in an incorrect form. Email input field can take 39 characters.
 
