@@ -12,12 +12,12 @@ const queries = async() => {
     // console.log(ans); // Returns true
 
     /* 1st way to display the contents including userId, id, title and body */
-    function countTitle(value) { // Function to count the number of words in the title
-        return value.title.split(' ').length > 6
-    } // end function countTitle
+    // function countTitle(value) { // Function to count the number of words in the title
+    //     return value.title.split(' ').length > 6
+    // } // end function countTitle
     
-    var filterTitle = posts.filter(countTitle)
-    console.log(filterTitle); 
+    // var filterTitle = posts.filter(countTitle)
+    // console.log(filterTitle); 
 
     /* 2nd way to display the contents including only titles in an organised form */
     // posts.forEach((posts) => {
@@ -37,23 +37,24 @@ const queries = async() => {
     //     }
     // }); 
     
-    // const wordFreq = function (wordBody, word) {
-    //     if (wordBody.has(word)) { // If the word exists in the title
-    //         wordBody.set(word, wordBody.get(word) + 1)
-    //     } else {
-    //         wordBody.set(word, 1)
-    //     } // end if else
-    //     return wordBody
-    // } 
+    /* Word frequency map function */
+    const wordFreq = function (wordBody, word) {
+        if (wordBody.has(word)) { // If the word exists in the title
+            wordBody.set(word, wordBody.get(word) + 1)
+        } else {
+            wordBody.set(word, 1)
+        } // end if else
+        return wordBody
+    } 
       
-    // const wordCount = posts => [...posts
-    //     .flatMap(item => item.body.split(/\s+/))
-    //     .reduce(wordFreq, new Map())
-    //     .entries()]   
-    //     .sort((a, b) => b[1] - a[1])
-    //     // .slice(0, 5)
-    //     .map(([word, count]) => `${word} [${count}]`)
-    // console.log(wordCount(posts))
+    const wordCount = posts => [...posts
+        .flatMap(item => item.body.split(/\s+/))
+        .reduce(wordFreq, new Map())
+        .entries()]   
+        .sort((a, b) => b[1] - a[1])
+        // .slice(0, 5)
+        .map(([word, count]) => `${word} [${count}]`)
+    console.log(wordCount(posts))
 }
 
 queries();

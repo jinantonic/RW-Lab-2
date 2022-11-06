@@ -54,7 +54,11 @@ Third way to display the contents displaying only titles in a plain text form us
 Displaying the right contents on terminal.
 
 ## 2nd part 
+![Sketch](/images/con8.png)
+Function to find the words and their occurences in the body contents of the data.
 
-
+</br></br>
+![Sketch](/images/con9.png) 
+Displaying the all of the words and it's occurences in the terminal.
 
 
