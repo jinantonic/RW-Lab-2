@@ -55,7 +55,7 @@ Displaying the right contents on terminal.
 
 ## 2nd part 
 ![Sketch](/images/con8.png)
-Function to find the words and their occurences in the body contents of the data.
+Function to find the words and their occurences in the body contents of the posts data.
 
 </br></br>
 ![Sketch](/images/con9.png) 
