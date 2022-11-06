@@ -1,10 +1,4 @@
 function getData() {
-	const searchButton = document.getElementById('searchButton');	
-	// let out = "";
-
-	// searchButton.onclick = function() {
-	// }
-
 	const username = document.getElementById('username').value;
 	fetch(`https://api.github.com/users/${username}`)
 	//fetch(`https://api.github.com/users/jinantonic`)
@@ -12,13 +6,14 @@ function getData() {
 	.then(data => {
 		console.log(data);
 		document.getElementById('profile').innerHTML = `<img src="${data.avatar_url}" />`
-		document.getElementById('name').innerHTML = data.name;
-		document.getElementById('login').innerHTML = data.login;
-		document.getElementById('bio').innerHTML = data.bio;
-        document.getElementById('email').innerHTML = data.email + " email";
-		document.getElementById('location').innerHTML = data.location;
-		document.getElementById('gists').innerHTML = data.public_gists;
-        document.getElementById('repos').innerHTML = data.public_repos;
+		document.getElementById('name').innerHTML = "Name : " + data.name;
+		document.getElementById('login').innerHTML = "User Name : " + data.login;
+		document.getElementById('bio').innerHTML = "Bio : " + data.bio;
+        document.getElementById('email').innerHTML = "Email : " + data.email;
+		document.getElementById('location').innerHTML = "Location : " + data.location;
+		document.getElementById('numRepos').innerHTML = "Number of Repos : " + data.public_repos;
+		document.getElementById('gists').innerHTML = "Number of Gists : " + data.public_gists;
+
 	}))
 
 	function fetchRepos(username) {
@@ -38,7 +33,6 @@ function getData() {
 	(async function() {
 		//const repos = await getRepos('bryanmccarthy')
 		//const repos = await getRepos('jinantonic')
-		//
 		const repos = await getRepos(username)
 		const [rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8] = repos
 		addRows([rep1, rep2, rep3, rep4, rep5, rep6, rep7, rep8])
@@ -61,17 +55,10 @@ function getData() {
 		return html
 	}
 
-	// const rowHtml = row => {
-	// 	//html = '<thead><tr><th>Repository<br>Name:</th><th>Description</th></tr></thead>'
-	// 	html = '';
-	// 	html += `<tbody><td>${row.name}</td><td>${row.description}</td></tbody>`
-	// 	return html
+	// function displayH() {
+	// 	var h2 = document.getElementsByTagName('h2');
+	// 	h2.style.display = 'inline';
 	// }
-	function resetTable() {
-		
-	}
-	
-		
 }
 
 getData();

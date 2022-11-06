@@ -3,25 +3,70 @@
     box-sizing: border-box;
     font-family: "Trirong", serif;
 }
-input {
-    width: 70%;
+
+body {
+    background-color: beige;
+    margin: 50px;
 }
 
-img{
-    margin-left: 50px;
+/* Username search box */
+input {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #8C8782;
+    color: white; 
+    border-radius: 5px;
+    border: none;
+    padding: 7px;
+}
+
+::placeholder {
+    color: #f3eeea;
+}
+
+/* Get details button */
+#searchButton {
+    background-color: #f3eeea;
+    color: #8C8782; 
+    border-radius: 5px;
+    border: 2px solid #8C8782;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#searchButton:hover {
+    background-color: #8C8782;
+}
+
+img {
+    margin-left: 10px;
     margin-top: 15px;
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
+    border: 8px solid #8C8782;
 }
 
 table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 
+/* #repoTable {
+    overflow: auto;
+    border-radius: 5px;
+} */
+
 th, td {
-  padding: 5px;
+    padding: 7px;
+}
+
+tr:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+tr:nth-child(even) {
+    background-color: #F5EFE6;
 }
 
 .userDetail {
