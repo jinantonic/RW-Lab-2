@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>Jina's GitHub API</title>
+        <h1>GitHub API</h1>
+        <link rel = "stylesheet" href = "/problem-3/gitHub.css">
+        <script src = "/problem-3/gitHub.js"></script>  
+    </head> 
+
+    <body>
+        <div class="container">
+            <div class="search-area">
+                <input type="text" name="" id="username" placeholder="Enter Github Username" autocomplete="off">
+                <button onclick="getData();">Get Details</button>
+            </div>
+            <div class="output-container" id="output">
+                <h2>User Profile</h2>
+                <div class="profile" id="profile"></div>
+                <div class="card">
+                    <h1 id = "name"></h1>
+                    <h2 id = "login"></h2>
+                    <strong><p id = "bio"></p></strong>
+                    <strong><p id = "email"></p></strong>
+                    <strong><p id = "location"></p></strong>
+                    <strong><p id = "gists"></p></strong>
+                </div>
+
+                <!-- <h2>User Repos</h2>
+                <div class="profile" id="profile"></div>
+                <div class="card2">
+                    <strong><p id = "reposName"></p></strong>
+                    <strong><p id = "reposDesc"></p></strong>
+                </div> -->
+
+                <!-- <div class="info">
+                    <ul>
+                        <li id="followers"></li>
+                        <li id="following"></li>
+                    </ul>
+                </div> -->
+            </div>
+            <table id="gitTable">
+                <thead>
+                  <tr>
+                    <th>Repository<br>Name:</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+        </div>
+        
+        
+    </body>
+</html>
