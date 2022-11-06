@@ -1,3 +1,4 @@
+
 const fetchPosts = async() => {
     return fetch("https://jsonplaceholder.typicode.com/posts") // Call the fetch function
     .then(response => response.json()) // .json() method parses the JSON response into a JS object literal, response type
