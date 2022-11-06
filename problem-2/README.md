@@ -25,7 +25,7 @@ Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts.
 
 </br></br>
 ![Sketch](/images/con1.png)</br>
-This is the part of my terminal screenshot. I can see all of the data is getting loaded and displayed.
+This is the part of my terminal result. I can see all data is getting loaded and displayed.
 
 </br></br>
 ![Sketch](/images/con2.png) 
