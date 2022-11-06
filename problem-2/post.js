@@ -14,29 +14,24 @@ const queries = async() => {
     //     return value.title.split(' ').length > 6
     // }
 
-    // function countTitle(value) {
-    //     return value.title.split(' ').length > 6
-    // }
+    // var filterTitle = posts.filter(countTitle)
+    // console.log(filterTitle); 
 
-    // const wordCountMapReducer = function (wordCountMap, word) {
-    //     if (wordCountMap.has(word)) {
-    //         wordCountMap.set(word, wordCountMap.get(word) + 1)
-    //     } else {
-    //         wordCountMap.set(word, 1)
+    // posts.forEach((posts) => {
+    //     var numWords = posts.title.split(' ').length;
+    //     if (numWords > 6) {
+    //         console.log([posts.title]);
     //     }
+    // });
 
-    //     return wordCountMap
-    // }
-      
-    // const countIngredients = posts => [...posts
-    //     .flatMap(item => item.body.split(' '))
-    //     .reduce(wordCountMapReducer, new Map())
-    //     .entries()]   
-    //     .sort((a, b) => b[1] - a[1])
-    //     // .slice(0, 5)
-    //     .map(([word, count]) => `${word} [${count}]`)
-    //     // .join(', ')
-    // console.log(countIngredients(posts))
+    // posts.forEach(function(posts) {
+    //     var numWords = posts.title.split(' ').length;
+    //     // console.log(numWords); // Display the number of words in each title
+    //     // console.log(posts.title);
+    //     if (numWords > 6) { // List all of the post titles having more than 6 words
+    //         console.log(posts.title);
+    //     }
+    // });
 
     const wordFreq = function (wordBody, word) {
         if (wordBody.has(word)) {
