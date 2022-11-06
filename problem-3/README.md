@@ -24,11 +24,11 @@ This is the main page of the application.
 
 </br></br>
 ![Sketch](/images/tb1.png)
-Entered my github username and returned this result and checked that it is displaying all of the descriped contents. I designed the able as it is described in the picture above.
+Entered my github username and this is the output. Checked that it is displaying all of the desired contents. I designed the table as it is described in the picture above, but I wasn't a huge fan of it.
 
 </br></br>
 ![Sketch](/images/tb2.png)
-Tried with another design to display the table, looks more organised. 
+So I came up with another design to display the table, looks more organised. 
 
 </br></br>
 ![Sketch](/images/tb3.png)
