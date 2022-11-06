@@ -36,7 +36,7 @@ Displaying the div error message when all fields are empty.
 
 </br></br>
 ![Sketch](/images/p4.png)
-Displaying the div error message when the user enters something else than a space or characters for Name. Name input field can take 20 characters in length or less.
+Displaying the div error message when the user enters something else than a space or characters for Name. Name input field can take 20 characters or less.
 
 </br></br>
 ![Sketch](/images/p5.png)
