@@ -29,7 +29,7 @@ This is the part of my terminal result. I can see all data is getting loaded and
 
 </br></br>
 ![Sketch](/images/con2.png) 
-I found 3 ways to display the post titles having more than six words.
+I found 3 ways to display the post titles having more than six words.</br>
 First way is to use the suggested function programming style of array operation, Array.filter. 
 
 </br></br>
