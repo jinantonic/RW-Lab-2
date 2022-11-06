@@ -48,7 +48,7 @@ Displaying the div error message when the user enters the Email in an incorrect 
 
 </br></br>
 ![Sketch](/images/p7.png)
-Display the contents of phone book. I added some contact data already in the table and odd numbered data rows have #f2f2f2 as the background color. 
+Display the contents of phone book. I added some contact data already in the table and odd numbered data rows have #f2f2f2 as the background colour. 
 
 </br></br>
 ![Sketch](/images/add.png)
@@ -68,4 +68,4 @@ Search begins as soon as input is typed and returns the correnct result from the
 
 </br></br>
 ![Sketch](/images/err.png)
-Displays the div error when ther is no matching row.
+Displays the div error when there is no matching row.
