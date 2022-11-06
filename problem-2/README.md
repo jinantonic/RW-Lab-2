@@ -17,7 +17,7 @@ For each answer, use console.log() to display the data (i.e. you do not have to 
 </br></br>
 
 # My solution
-1. The first part 
+## 1st part 
 </br></br>
 
 ![Sketch](/images/fetch.png)  
