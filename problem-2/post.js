@@ -2,7 +2,7 @@
 const fetchPosts = async() => {
     return fetch("https://jsonplaceholder.typicode.com/posts") // Call the fetch function
     .then(response => response.json()) // .json() method parses the JSON response into a JS object literal, response type
-    //.then(data => console.log(data)); // Log the data;
+    .then(data => console.log(data)); // Log the data
 } 
 
 const queries = async() => {
@@ -38,23 +38,23 @@ const queries = async() => {
     //     }
     // }); 
     
-    const wordFreq = function (wordBody, word) {
-        if (wordBody.has(word)) { // If the word exists in the title
-            wordBody.set(word, wordBody.get(word) + 1)
-        } else {
-            wordBody.set(word, 1)
-        } // end if else
-        return wordBody
-    } 
+    // const wordFreq = function (wordBody, word) {
+    //     if (wordBody.has(word)) { // If the word exists in the title
+    //         wordBody.set(word, wordBody.get(word) + 1)
+    //     } else {
+    //         wordBody.set(word, 1)
+    //     } // end if else
+    //     return wordBody
+    // } 
       
-    const wordCount = posts => [...posts
-        .flatMap(item => item.body.split(/\s+/))
-        .reduce(wordFreq, new Map())
-        .entries()]   
-        .sort((a, b) => b[1] - a[1])
-        // .slice(0, 5)
-        .map(([word, count]) => `${word} [${count}]`)
-    console.log(wordCount(posts))
+    // const wordCount = posts => [...posts
+    //     .flatMap(item => item.body.split(/\s+/))
+    //     .reduce(wordFreq, new Map())
+    //     .entries()]   
+    //     .sort((a, b) => b[1] - a[1])
+    //     // .slice(0, 5)
+    //     .map(([word, count]) => `${word} [${count}]`)
+    // console.log(wordCount(posts))
 }
 
 queries();
