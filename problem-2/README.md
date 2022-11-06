@@ -57,12 +57,4 @@ Displaying the right contents on terminal.
 
 
 
-While editing               |  After saved
-:-------------------------:|:-------------------------:
-![Sketch](/images/note2.png)|![Sketch](/images/note3.png)
-
-
-</br></br>
-
-![Sketch](/images/note4.png)
 
