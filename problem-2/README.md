@@ -19,6 +19,7 @@ For each answer, use console.log() to display the data (i.e. you do not have to 
 # My solution
 ## 1st part 
 
+</br>
 ![Sketch](/images/fetch.png)  
 Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts.
 
@@ -52,7 +53,7 @@ Third way to display the contents displaying only titles in a plain text form us
 ![Sketch](/images/con7.png) 
 Displaying the right contents on terminal.
 
-
+## 2nd part 
 
 
 
