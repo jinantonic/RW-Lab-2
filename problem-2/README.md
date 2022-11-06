@@ -59,6 +59,6 @@ Function to find the words and their occurences in the body contents of the post
 
 </br></br>
 ![Sketch](/images/con9.png) 
-Displaying the all of the words and it's occurences in the terminal.
+Displaying the all of the words and it's occurences in terminal.
 
 
