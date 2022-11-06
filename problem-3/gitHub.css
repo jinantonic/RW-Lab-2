@@ -3,6 +3,9 @@
     box-sizing: border-box;
     font-family: "Trirong", serif;
 }
+input {
+    width: 80%;
+}
 
 img{
     margin-left: 50px;
