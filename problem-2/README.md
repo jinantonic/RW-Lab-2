@@ -18,12 +18,17 @@ For each answer, use console.log() to display the data (i.e. you do not have to 
 
 # My solution
 
+</br></br
+
+![Sketch](/images/fetch.png)  
+Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts
+
 </br></br>
 
-![Sketch](/images/note1.png)  
 
 
-</br></br>
+
+
 
 While editing               |  After saved
 :-------------------------:|:-------------------------:
