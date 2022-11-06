@@ -21,9 +21,11 @@ For each answer, use console.log() to display the data (i.e. you do not have to 
 </br></br>
 
 ![Sketch](/images/fetch.png)  
-Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts
+Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts.
 
 </br></br>
+![Sketch](/images/con1.png) 
+Check if all of the data is getting loaded and displayed. I can see all the contents in my terminal.
 
 
 

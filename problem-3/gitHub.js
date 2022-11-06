@@ -11,7 +11,7 @@ function getData() {
 		document.getElementById('bio').innerHTML = "Bio : " + data.bio;
         document.getElementById('email').innerHTML = "Email : " + data.email;
 		document.getElementById('location').innerHTML = "Location : " + data.location;
-				document.getElementById('numRepos').innerHTML = "Number of Repos : " + data.public_repos;
+		
 		document.getElementById('gists').innerHTML = "Number of Gists : " + data.public_gists;
 
 	}))

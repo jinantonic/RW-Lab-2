@@ -4,74 +4,38 @@
     font-family: "Trirong", serif;
 }
 
-body {
-    background-color: beige;
-    margin: 50px;
-}
-
-/* Username search box */
 input {
-    width: 75%;
-    margin: 0 auto;
-    background-color: #8C8782;
-    color: white; 
-    border-radius: 5px;
-    border: none;
-    padding: 7px;
+    width: 70%;
 }
 
-::placeholder {
-    color: #f3eeea;
+h2 {
+    display: none;
 }
 
-/* Get details button */
-#searchButton {
-    background-color: #f3eeea;
-    color: #8C8782; 
-    border-radius: 5px;
-    border: 2px solid #8C8782;
-    cursor: pointer;
-    padding: 5px;
-}
-
-#searchButton:hover {
-    background-color: #8C8782;
-}
-
-img {
-    margin-left: 10px;
+img{
+    margin-left: 50px;
     margin-top: 15px;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    border: 8px solid #8C8782;
 }
 
 table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-
-/* #repoTable {
-    overflow: auto;
-    border-radius: 5px;
-} */
 
 th, td {
-    padding: 7px;
+  padding: 5px;
 }
-
-tr:nth-child(odd) {
-    background-color: #F2F2F2;
+.infoDump {
+	clear:both;   
+	
 }
-
-tr:nth-child(even) {
-    background-color: #F5EFE6;
-}
-
 .userDetail {
     float: left;
     width: 40%;
+	position: relative;
 }
 
 .repoDetail {
