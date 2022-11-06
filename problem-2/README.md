@@ -25,8 +25,33 @@ Fetch JSON data from the given link https://jsonplaceholder.typicode.com/posts.
 
 </br></br>
 ![Sketch](/images/con1.png) 
-Check if all of the data is getting loaded and displayed. I can see all the contents in my terminal.
+This is the part of my terminal screenshot. I can see all of the data is getting loaded and displayed.
 
+</br></br>
+![Sketch](/images/con2.png) 
+I found 3 ways to display the post titles having more than six words.
+First way is to use the suggested function programming style of array operation, Array.filter. 
+
+</br></br>
+![Sketch](/images/con3.png) 
+From the terminal, I can see it is displaying all of the contents including userId, id, title and body whose titles have more than 6 words.
+
+</br></br>
+![Sketch](/images/con4.png) 
+Second way to display the contents displaying only titles in a prettier form using Array.forEach.
+
+</br></br>
+![Sketch](/images/con5.png) 
+Displaying the right contents on terminal.
+
+
+</br></br>
+![Sketch](/images/con6.png) 
+Third way to display the contents displaying only titles in a plain text form usng Array.forEach. 
+
+</br></br>
+![Sketch](/images/con7.png) 
+Displaying the right contents on terminal.
 
 
 
