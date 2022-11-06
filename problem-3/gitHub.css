@@ -13,7 +13,6 @@ body {
     margin: 50px;
 }
 
-/* Username search box */
 input {
     width: 75%;
     margin: 0 auto;
@@ -22,10 +21,6 @@ input {
     border-radius: 5px;
     border: none;
     padding: 7px;
-}
-
-h2 {
-    display: none;
 }
 
 ::placeholder {
@@ -43,6 +38,10 @@ h2 {
 
 #searchButton:hover, #resetButton:hover {
     background-color: #B9AC92;
+}
+
+h2 {
+    display: none;
 }
 
 img {

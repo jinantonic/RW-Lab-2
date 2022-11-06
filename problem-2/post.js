@@ -1,4 +1,3 @@
-
 const fetchPosts = async() => {
     return fetch("https://jsonplaceholder.typicode.com/posts") // Call the fetch function
     .then(response => response.json()) // .json() method parses the JSON response into a JS object literal, response type
@@ -12,12 +11,12 @@ const queries = async() => {
     // console.log(ans); // Returns true
 
     /* 1st way to display the contents including userId, id, title and body */
-    // function countTitle(value) { // Function to count the number of words in the title
-    //     return value.title.split(' ').length > 6
-    // } // end function countTitle
+    function countTitle(value) { // Function to count the number of words in the title
+        return value.title.split(' ').length > 6
+    } // end function countTitle
     
-    // var filterTitle = posts.filter(countTitle)
-    // console.log(filterTitle); 
+    var filterTitle = posts.filter(countTitle)
+    console.log(filterTitle); 
 
     /* 2nd way to display the contents including only titles in an organised form */
     // posts.forEach((posts) => {

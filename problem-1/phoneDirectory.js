@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     tableIndex();
 });
 
-
 function validation() {
     var contactName = document.forms["contact_input"]["contactName"].value;
     var mobileNumber = document.forms["contact_input"]["mobileNumber"].value;
