@@ -5,6 +5,7 @@
 - The list can be sorted by name.
 - The list can be filtered by phone number.
 
+![Sketch](/images/p1.png)
 
 Functionality:
 - It has three fields Name, Mobile and Email. All 3 are required fields.
@@ -27,6 +28,7 @@ Before adding a contact, the following validations should occur:
 
 # My solution
 ![Sketch](/images/1x4.png)
+This is the overall look of the application.
 
 </br></br></br>
 
