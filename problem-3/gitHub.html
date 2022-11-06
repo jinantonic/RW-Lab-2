@@ -6,6 +6,7 @@
         <title>Jina's GitHub API</title>
         <h1>GitHub API</h1>
         <link rel = "stylesheet" href = "/problem-3/gitHub.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
         <script src = "/problem-3/gitHub.js"></script>  
     </head> 
 
@@ -15,10 +16,11 @@
                 <input type="text" name="" id="username" placeholder="Enter Github Username" autocomplete="off">
                 <button onclick="getData();">Get Details</button>
             </div>
-            <div class="output-container" id="output">
+
+            <div class = "userDetail" id = "userDetail">
                 <h2>User Profile</h2>
-                <div class="profile" id="profile"></div>
-                <div class="card">
+                <div class = "profile" id = "profile"></div>
+                <div class = "card">
                     <h1 id = "name"></h1>
                     <h2 id = "login"></h2>
                     <strong><p id = "bio"></p></strong>
@@ -26,30 +28,21 @@
                     <strong><p id = "location"></p></strong>
                     <strong><p id = "gists"></p></strong>
                 </div>
-
-                <!-- <h2>User Repos</h2>
-                <div class="profile" id="profile"></div>
-                <div class="card2">
-                    <strong><p id = "reposName"></p></strong>
-                    <strong><p id = "reposDesc"></p></strong>
-                </div> -->
-
-                <!-- <div class="info">
-                    <ul>
-                        <li id="followers"></li>
-                        <li id="following"></li>
-                    </ul>
-                </div> -->
             </div>
-            <table id="gitTable">
-                <thead>
-                  <tr>
-                    <th>Repository<br>Name:</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
+
+            <div class = "repoDetail" id = "repoDetail">
+                <h2>User Repos</h2>
+                <table id="repoTable">
+                    <thead>
+                        <tr>
+                            <th>Repository<br>Name:</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
         </div>
         
         

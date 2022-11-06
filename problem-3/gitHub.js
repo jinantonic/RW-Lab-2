@@ -19,26 +19,26 @@
 // // 404: ERROR
 // // 403: FORBIDDEN
 
-// function getData() {
-// 	//const username = document.getElementById('username').value;
-// 	// fetch(`https://api.github.com/users/${username}`)
-// 	fetch(`https://api.github.com/users/jinantonic`)
-// 	.then(response => response.json()
-// 	.then(data => {
-// 		console.log(data);
-// 		document.getElementById('profile').innerHTML = `<img src="${data.avatar_url}" />`
-// 		document.getElementById('name').innerHTML = data.name;
-// 		document.getElementById('login').innerHTML = data.login;
-// 		document.getElementById('bio').innerHTML = data.bio;
-//         document.getElementById('email').innerHTML = data.email + " email";
-// 		document.getElementById('location').innerHTML = data.location;
-// 		document.getElementById('gists').innerHTML = data.public_gists;
-//         document.getElementById('repos').innerHTML = data.public_repos;
-//         document.getElementById('repos').innerHTML = data.repos;
-// 	}))
-// }
+function getData() {
+	//const username = document.getElementById('username').value;
+	// fetch(`https://api.github.com/users/${username}`)
+	fetch(`https://api.github.com/users/jinantonic`)
+	.then(response => response.json()
+	.then(data => {
+		console.log(data);
+		document.getElementById('profile').innerHTML = `<img src="${data.avatar_url}" />`
+		document.getElementById('name').innerHTML = data.name;
+		document.getElementById('login').innerHTML = data.login;
+		document.getElementById('bio').innerHTML = data.bio;
+        document.getElementById('email').innerHTML = data.email + " email";
+		document.getElementById('location').innerHTML = data.location;
+		document.getElementById('gists').innerHTML = data.public_gists;
+        document.getElementById('repos').innerHTML = data.public_repos;
+        //document.getElementById('repos').innerHTML = data.repos;
+	}))
+}
 
-// getData();
+getData();
 
 // function getRepos() {
 // 	//const username = document.getElementById('username').value;
@@ -115,7 +115,7 @@ const getRepos = async(username) => {
   
 const addTwoRows = (rows) => {
 rows.forEach(e => {
-	const tbody = document.querySelector('#gitTable tbody')
+	const tbody = document.querySelector('#repoTable tbody')
 	const tr = document.createElement('tr')
 	tr.innerHTML = rowHtml(e)
 	tbody.appendChild(tr)
