@@ -17,6 +17,7 @@ Notes:
    You should implement a scrollable list to display these if the number exceeds 5.
 - Marks will be awarded for code quality such as formatting and how DRY your code is.
 
+</br></br>
 
 # My solution
 ![Sketch](/images/main.png)
