@@ -1,12 +1,11 @@
 # Problem 3
-
 You will build a web application for querying user information from the Github
 API that looks like the following:
 </br></br>
 
 ![Sketch](/images/g1.png)
 
-</br></br>
+</br>
 
 Notes:
 - Use only native APIs, Javascript, HTML and CSS (no external libraries permitted.
@@ -20,8 +19,6 @@ Notes:
 
 
 # My solution
-</br></br>
-
 ![Sketch](/images/main.png)
 This is the main page of the application.
 

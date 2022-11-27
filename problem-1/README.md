@@ -11,6 +11,8 @@ Functionality:
 - It has three fields Name, Mobile and Email. All 3 are required fields.
 - Clicking on the Add Contact button should add the contact to the table. 
 
+</br>
+
 Before adding a contact, the following validations should occur:
 - **Name** should contain only Alphabets and Space. Should be less than or equal to 20 characters in length.
 - **Mobile** should contain only Numbers. Should be equal to 10 characters in length.
