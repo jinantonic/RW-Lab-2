@@ -31,41 +31,51 @@ Before adding a contact, the following validations should occur:
 This is the overall look of the application.
 
 </br></br>
+
 ![Sketch](/images/p3.png)
 Displaying the div error message when all fields are empty.
 
 </br></br>
+
 ![Sketch](/images/p4.png)
 Displaying the div error message when the user enters something else than a space or characters for Name. Name input field can take 20 characters or less.
 
 </br></br>
+
 ![Sketch](/images/p5.png)
 Displaying the div error message when the user enters something else than only numbers for Mobile. Mobile input field can take 10 characters. 
 
 </br></br>
+
 ![Sketch](/images/p6.png)
 Displaying the div error message when the user enters the Email in an incorrect form. Email input field can take 39 characters.
 
 </br></br>
+
 ![Sketch](/images/p7.png)
 Display the contents of phone book. I added some contact data already in the table and odd numbered data rows have #f2f2f2 as the background colour. 
 
 </br></br>
+
 ![Sketch](/images/add.png)
 Checked that the valid contacts are getting added sequentially in the table.
 
 </br></br>
+
 ![Sketch](/images/asc.png)
 Once the Name header is clicked, it sorts the contents by ascending order of the contact name.
 
 </br></br>
+
 ![Sketch](/images/des.png)
 Further click sorts the contents by descending order of the contact name.
 
 </br></br>
+
 ![Sketch](/images/sear.png)
 Search begins as soon as input is typed and returns the correnct result from the table.
 
 </br></br>
+
 ![Sketch](/images/err.png)
 Displays the div error when there is no matching row.
